@@ -37,7 +37,7 @@ const Category = () => {
             <p className="mt-8 max-w-xl font-body text-lg leading-relaxed text-muted-foreground">{cat.description}</p>
           </div>
           <div className="md:col-span-5">
-            <div className="aspect-[4/5] w-full overflow-hidden bg-cream-deep shadow-elegant">
+            <div className="aspect-[4/5] w-full overflow-hidden bg-secondary shadow-elegant">
               <img src={cat.image} alt={cat.name} loading="lazy" className="h-full w-full object-cover" />
             </div>
           </div>

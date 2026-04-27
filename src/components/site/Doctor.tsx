@@ -4,7 +4,7 @@ export const Doctor = () => (
   <section id="doctor" className="bg-secondary/40 py-28 md:py-40">
     <div className="container-luxe grid gap-16 md:grid-cols-12 md:gap-24">
       <div className="relative md:col-span-5">
-        <div className="overflow-hidden bg-cream-deep shadow-elegant">
+        <div className="overflow-hidden bg-secondary shadow-elegant">
           <img
             src={doc}
             alt="Dr. Tasneem Elahi, MBBS Cosmetologist"
