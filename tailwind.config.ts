@@ -100,6 +100,10 @@ export default {
           "0%": { backgroundPosition: "-200% 0" },
           "100%": { backgroundPosition: "200% 0" },
         },
+        "marquee": {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -108,6 +112,7 @@ export default {
         "fade-in": "fade-in 0.9s ease-out both",
         "scale-in": "scale-in 1.4s cubic-bezier(0.22,1,0.36,1) both",
         "shimmer": "shimmer 8s linear infinite",
+        "marquee": "marquee 40s linear infinite",
       },
     },
   },

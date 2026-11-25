@@ -1,50 +1,79 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { categories } from "@/data/services";
+import { whatsappLink } from "@/data/site";
 
-export const Services = () => (
-  <section id="services" className="bg-background py-28 md:py-40">
-    <div className="container-luxe">
-      <div className="grid gap-10 md:grid-cols-12">
-        <div className="md:col-span-5">
-          <div className="eyebrow">The Practice</div>
-          <h2 className="mt-6 font-display text-5xl leading-[1.05] md:text-7xl text-balance">
-            Treatments, <em className="text-accent">curated.</em>
+export const Services = () => {
+  const [active, setActive] = useState(0);
+  const c = categories[active];
+
+  return (
+    <section id="services" className="bg-gradient-to-br from-[hsl(25_32%_30%)] to-[hsl(25_32%_42%)] py-24 md:py-28">
+      <div className="container-luxe">
+        <div className="mx-auto max-w-3xl text-center">
+          <h2 className="font-display text-5xl leading-[1.05] text-background md:text-6xl text-balance">
+            What Treatments <em className="text-accent">Do We Offer</em>
           </h2>
+          <p className="mt-5 font-body text-base leading-relaxed text-background/80">
+            From precision laser to surgical artistry, every service at Pelle is performed with medical-grade safety and a refined aesthetic eye.
+          </p>
         </div>
-        <p className="md:col-span-6 md:col-start-7 md:pt-6 font-body text-lg leading-relaxed text-muted-foreground">
-          From precision laser to surgical artistry, every service at Pelle is
-          performed with medical-grade safety and a refined aesthetic sensibility.
-        </p>
-      </div>
 
-      <div className="mt-20 grid gap-px bg-border md:grid-cols-3">
-        {categories.map((c) => (
-          <Link
-            key={c.slug}
-            to={`/category/${c.slug}`}
-            className="group relative flex flex-col bg-background p-8 hover-rise md:p-10"
-          >
-            <div className="aspect-[4/3] w-full overflow-hidden bg-secondary">
-              <img
-                src={c.image}
-                alt={c.name}
-                loading="lazy"
-                className="h-full w-full object-cover transition-transform duration-[1200ms] group-hover:scale-105"
-              />
+        <div className="mt-10 flex flex-wrap justify-center gap-3">
+          {categories.map((cat, idx) => (
+            <button
+              key={cat.slug}
+              onClick={() => setActive(idx)}
+              className={`rounded-full px-6 py-2.5 font-body text-sm transition-colors ${
+                idx === active ? "bg-background text-primary" : "bg-background/15 text-background hover:bg-background/25"
+              }`}
+            >
+              {cat.name}
+            </button>
+          ))}
+        </div>
+
+        <div key={c.slug} className="mx-auto mt-10 grid max-w-6xl animate-fade-in items-center gap-8 rounded-3xl bg-card p-6 md:grid-cols-2 md:p-10">
+          <div>
+            <div className="font-body text-xs uppercase tracking-[0.25em] text-primary">{c.number} · {c.short}</div>
+            <h3 className="mt-3 font-display text-4xl md:text-5xl">{c.name}</h3>
+            <p className="mt-5 font-body text-base leading-relaxed text-foreground/75">{c.description}</p>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <a
+                href={whatsappLink(`Hello, I would like to book a consultation for ${c.name}.`)}
+                target="_blank"
+                rel="noreferrer"
+                className="rounded-full bg-primary px-7 py-3 font-body text-sm font-medium text-primary-foreground transition-colors hover:bg-foreground"
+              >
+                Book Appointment
+              </a>
+              <Link
+                to={`/category/${c.slug}`}
+                className="inline-flex items-center gap-2 rounded-full border border-border px-7 py-3 font-body text-sm text-foreground transition-colors hover:border-primary hover:text-primary"
+              >
+                View All <ArrowRight className="h-4 w-4" />
+              </Link>
             </div>
-            <div className="mt-8 flex items-start justify-between gap-6">
-              <div>
-                <div className="font-body text-[11px] uppercase tracking-[0.25em] text-primary">{c.number}</div>
-                <h3 className="mt-3 font-display text-3xl leading-tight md:text-4xl">{c.name}</h3>
-                <p className="mt-3 font-body text-sm italic text-muted-foreground">{c.short}</p>
+            {c.treatments.length > 0 && (
+              <div className="mt-8 flex flex-wrap gap-2.5">
+                {c.treatments.map((t) => (
+                  <Link
+                    key={t.slug}
+                    to={`/category/${c.slug}/${t.slug}`}
+                    className="rounded-full bg-secondary/70 px-4 py-2 font-body text-sm text-foreground/75 transition-colors hover:bg-secondary hover:text-primary"
+                  >
+                    {t.name}
+                  </Link>
+                ))}
               </div>
-              <ArrowUpRight className="mt-2 h-6 w-6 shrink-0 text-foreground/60 transition-all group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:text-accent" />
-            </div>
-            <p className="mt-5 font-body text-sm leading-relaxed text-foreground/70">{c.description}</p>
-          </Link>
-        ))}
+            )}
+          </div>
+          <div className="aspect-[4/3] overflow-hidden rounded-2xl bg-secondary">
+            <img src={c.image} alt={c.name} loading="lazy" className="h-full w-full object-cover" />
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
-);
+    </section>
+  );
+};
