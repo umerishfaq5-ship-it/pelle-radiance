@@ -9,15 +9,15 @@ export const Services = () => {
   const c = categories[active];
 
   return (
-    <section id="services" className="bg-gradient-brand py-20 md:py-28">
+    <section id="services" className="bg-secondary py-20 md:py-28">
       <div className="container-luxe">
         {/* Section header */}
         <div className="mx-auto max-w-3xl text-center">
-          <div className="font-body text-xs uppercase tracking-[0.28em] text-accent">The Practice</div>
-          <h2 className="mt-4 font-display text-5xl leading-[1.03] text-background md:text-6xl text-balance">
-            7 Specialties, <em className="text-accent">one clinic.</em>
+          <div className="font-body text-xs uppercase tracking-[0.28em] text-primary">The Practice</div>
+          <h2 className="mt-4 font-display text-5xl leading-[1.03] text-foreground md:text-6xl text-balance">
+            7 Specialties, <em className="text-primary">one clinic.</em>
           </h2>
-          <p className="mt-5 font-body text-base leading-relaxed text-background/80">
+          <p className="mt-5 font-body text-base leading-relaxed text-muted-foreground">
             From precision cosmetic surgery to advanced laser skincare, from hair transplant to
             injectable rejuvenation — every service at Pelle is led by Dr. Tasneem Elahi with
             medical-grade safety and a refined aesthetic sensibility.
@@ -33,7 +33,7 @@ export const Services = () => {
               aria-selected={idx === active}
               onClick={() => setActive(idx)}
               className={`rounded-full px-5 py-2.5 font-body text-sm transition-colors ${
-                idx === active ? "bg-background text-primary" : "bg-background/15 text-background hover:bg-background/25"
+                idx === active ? "bg-primary text-primary-foreground shadow-soft" : "bg-background text-foreground/80 hover:text-primary"
               }`}
             >
               {cat.name}
@@ -42,7 +42,7 @@ export const Services = () => {
         </div>
 
         {/* Active category card */}
-        <div key={c.slug} className="mx-auto mt-8 grid max-w-6xl animate-fade-in items-center gap-8 rounded-3xl bg-card p-6 md:grid-cols-2 md:p-10">
+        <div key={c.slug} className="mx-auto mt-8 grid max-w-6xl animate-fade-in items-center gap-8 rounded-3xl bg-card p-6 shadow-elegant md:grid-cols-2 md:p-10">
           <div>
             <div className="font-body text-xs uppercase tracking-[0.25em] text-primary">
               {c.icon} {c.number} · {c.short}
@@ -105,7 +105,7 @@ export const Services = () => {
           >
             Ask About Pricing
           </a>
-          <span className="font-body text-sm text-background/75">or call · +92 333 5100650</span>
+          <span className="font-body text-sm text-muted-foreground">or call · +92 333 5100650</span>
         </div>
       </div>
     </section>
