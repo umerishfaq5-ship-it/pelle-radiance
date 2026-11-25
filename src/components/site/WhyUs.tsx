@@ -52,48 +52,56 @@ const reasons = [
 ];
 
 export const WhyUs = () => (
-  <section className="bg-foreground text-background py-24 md:py-36">
+  <section className="bg-background py-20 md:py-28">
     <div className="container-luxe">
-      <div className="grid gap-10 md:grid-cols-12 mb-16">
-        <div className="md:col-span-5">
-          <div className="font-body text-[10px] uppercase tracking-[0.28em] text-accent mb-5">Why Choose Pelle</div>
-          <h2 className="font-display text-5xl leading-[1.03] md:text-7xl text-balance">
-            Islamabad's most{" "}
-            <em className="text-accent">trusted</em>{" "}
-            clinic.
+      <div className="rounded-3xl bg-secondary p-6 md:p-12">
+        <div className="mx-auto max-w-3xl text-center">
+          <div className="font-body text-xs uppercase tracking-[0.28em] text-primary">Why Choose Pelle</div>
+          <h2 className="mt-4 font-display text-5xl leading-[1.03] md:text-6xl text-balance">
+            Islamabad's most <em className="text-primary">trusted</em> clinic.
           </h2>
-        </div>
-        <div className="md:col-span-6 md:col-start-7 md:pt-4">
-          <p className="font-body text-base leading-relaxed text-background/70 md:text-lg">
+          <p className="mt-5 font-body text-base leading-relaxed text-muted-foreground">
             Choosing the right doctor for aesthetic procedures is one of the most important
             decisions you'll make. Here's why thousands of patients across Islamabad,
             Rawalpindi and beyond choose Pelle.
           </p>
-          <a
-            href="https://wa.me/923335100650?text=Hi%2C%20I%20would%20like%20to%20consult%20with%20Dr.%20Tasneem."
-            target="_blank"
-            rel="noreferrer"
-            className="mt-6 inline-flex items-center gap-2 bg-accent px-7 py-3.5 text-xs uppercase tracking-[0.2em] text-accent-foreground transition-all hover:-translate-y-0.5"
-          >
-            <MessageCircle className="h-4 w-4" />
-            Free WhatsApp Consultation
-          </a>
         </div>
-      </div>
 
-      <div className="grid gap-px bg-background/10 sm:grid-cols-2 lg:grid-cols-4">
-        {reasons.map((r, i) => (
-          <div
-            key={i}
-            className="group flex flex-col gap-4 bg-foreground p-8 transition-colors hover:bg-background/5"
-          >
-            <div className="text-accent transition-transform group-hover:scale-110 transition-transform duration-300 w-fit">
-              {r.icon}
+        <div className="mt-12 grid items-start gap-10 lg:grid-cols-12">
+          <div className="lg:col-span-5">
+            <div className="aspect-[4/5] overflow-hidden rounded-2xl">
+              <img
+                src="/treatment-images/hero-dr-tasneem.webp"
+                alt="Dr. Tasneem Elahi at Pelle Aesthetic & Cosmetic, Islamabad"
+                loading="lazy"
+                className="h-full w-full object-cover"
+              />
             </div>
-            <h3 className="font-display text-xl leading-tight text-background md:text-2xl">{r.title}</h3>
-            <p className="font-body text-sm leading-relaxed text-background/60">{r.description}</p>
+            <a
+              href="https://wa.me/923335100650?text=Hi%2C%20I%20would%20like%20to%20consult%20with%20Dr.%20Tasneem."
+              target="_blank"
+              rel="noreferrer"
+              className="mt-6 flex items-center justify-center gap-2 rounded-full bg-primary px-7 py-3.5 font-body text-sm font-medium text-primary-foreground transition-colors hover:bg-foreground"
+            >
+              <MessageCircle className="h-4 w-4" />
+              Free WhatsApp Consultation
+            </a>
           </div>
-        ))}
+
+          <div className="grid gap-x-8 gap-y-7 sm:grid-cols-2 lg:col-span-7">
+            {reasons.map((r, i) => (
+              <div key={i} className="flex gap-4">
+                <div className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-background text-primary [&>svg]:h-5 [&>svg]:w-5">
+                  {r.icon}
+                </div>
+                <div>
+                  <h3 className="font-body text-base font-semibold text-primary">{r.title}</h3>
+                  <p className="mt-1 font-body text-sm leading-relaxed text-foreground/70">{r.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   </section>

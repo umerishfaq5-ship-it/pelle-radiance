@@ -1,0 +1,64 @@
+name: Deploy to drtasneemshakir.com
+
+# Every push to main builds the site (with prerendered pages for SEO)
+# and uploads dist/ to the Namecheap hosting over encrypted FTPS.
+# Needs repository secrets: FTP_SERVER, FTP_USERNAME, FTP_PASSWORD
+# (deploy-only FTP account limited to /home/pellkdtr/drtasneemshakir.com).
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-production
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      FTP_SERVER: ${{ secrets.FTP_SERVER }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Chromium for prerendering
+        run: npx playwright install --with-deps chromium
+
+      - name: Build
+        run: npm run build
+
+      - name: Prerender pages
+        run: node scripts/prerender.mjs
+
+      - name: Check build output
+        run: |
+          test -f dist/index.html
+          test -d dist/assets
+          ls dist
+
+      - name: Skip upload (FTP secrets not set yet)
+        if: env.FTP_SERVER == ''
+        run: echo "::warning::FTP secrets are not set, so the site was built but not uploaded."
+
+      # Uploads only changed files. Files that were never uploaded by this
+      # action (e.g. .htaccess, .well-known/ on the server) are left untouched.
+      - name: Upload to hosting (FTPS)
+        if: env.FTP_SERVER != ''
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          port: 21
+          local-dir: ./dist/
+          server-dir: ./

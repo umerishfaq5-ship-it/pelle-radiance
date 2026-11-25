@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { CheckCircle } from "lucide-react";
+import { CheckCircle, Star } from "lucide-react";
 
 const stats = [
   { end: 5000, suffix: "+", label: "Happy Patients", sub: "Across Islamabad & Pakistan" },
@@ -37,13 +37,12 @@ function useCountUp(end: number, duration = 1800, trigger: boolean) {
 const StatCard = ({ stat, trigger }: { stat: typeof stats[0]; trigger: boolean }) => {
   const count = useCountUp(stat.end, 1800, trigger);
   return (
-    <div className="relative flex flex-col items-center md:items-start text-center md:text-left p-6 md:p-8 group">
-      <div className="font-display text-5xl md:text-6xl text-primary">
+    <div className="flex flex-col px-2 py-6 md:py-8">
+      <div className="font-display text-5xl text-primary md:text-6xl">
         {count.toLocaleString()}{stat.suffix}
       </div>
       <div className="mt-2 font-body text-sm font-semibold text-foreground">{stat.label}</div>
-      <div className="mt-1 font-body text-xs text-muted-foreground italic">{stat.sub}</div>
-      <div className="absolute bottom-0 left-6 right-6 h-px bg-border md:hidden" />
+      <div className="mt-1 font-body text-xs text-muted-foreground">{stat.sub}</div>
     </div>
   );
 };
@@ -62,23 +61,36 @@ export const TrustStrip = () => {
   }, []);
 
   return (
-    <section ref={ref} className="bg-background border-b border-border">
-      {/* Stats row */}
+    <section ref={ref} className="bg-background py-16 md:py-20">
       <div className="container-luxe">
-        <div className="grid grid-cols-2 divide-x divide-y divide-border md:grid-cols-4 md:divide-y-0">
-          {stats.map((s) => (
-            <StatCard key={s.label} stat={s} trigger={triggered} />
-          ))}
-        </div>
-      </div>
+        <div className="rounded-3xl bg-secondary p-6 md:p-10">
+          <div className="flex flex-col gap-3 md:flex-row md:items-center md:gap-6">
+            <h2 className="font-display text-5xl leading-none md:text-6xl">
+              Our <em className="text-primary">Trust</em>
+            </h2>
+            <div className="hidden h-12 w-px bg-primary/25 md:block" />
+            <div>
+              <div className="flex gap-0.5">
+                {[1, 2, 3, 4, 5].map((s) => (
+                  <Star key={s} className="h-4 w-4 fill-accent text-accent" />
+                ))}
+              </div>
+              <div className="mt-1 font-body text-sm text-muted-foreground">Rated by 5,000+ patients across Pakistan</div>
+            </div>
+          </div>
 
-      {/* Trust points */}
-      <div className="bg-secondary/40 border-t border-border">
-        <div className="container-luxe py-5">
-          <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 md:justify-between">
+          {/* Stats row */}
+          <div className="mt-6 grid grid-cols-2 border-y border-dashed border-primary/30 md:grid-cols-4">
+            {stats.map((s) => (
+              <StatCard key={s.label} stat={s} trigger={triggered} />
+            ))}
+          </div>
+
+          {/* Trust points */}
+          <div className="mt-6 flex flex-wrap gap-2.5">
             {trustPoints.map((t) => (
-              <div key={t} className="inline-flex items-center gap-2 font-body text-xs text-foreground/75">
-                <CheckCircle className="h-3.5 w-3.5 text-accent shrink-0" />
+              <div key={t} className="inline-flex items-center gap-2 rounded-full bg-background px-4 py-2 font-body text-sm text-foreground/80">
+                <CheckCircle className="h-4 w-4 shrink-0 text-primary" />
                 {t}
               </div>
             ))}
