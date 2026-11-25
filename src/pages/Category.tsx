@@ -1,12 +1,74 @@
 import { Link, useParams } from "react-router-dom";
 import { ArrowRight, ArrowLeft } from "lucide-react";
+import { useEffect } from "react";
 import { NavLight } from "@/components/site/Nav";
 import { Footer } from "@/components/site/Footer";
+import { GeoDataLayer } from "@/components/site/GeoDataLayer";
+import { WhatsAppFAB } from "@/components/site/WhatsAppFAB";
+import { BackToTopFAB } from "@/components/site/BackToTopFAB";
+import { CategoryImage } from "@/components/site/CategoryImage";
 import { findCategory } from "@/data/services";
+import { usePageSeo } from "@/hooks/usePageSeo";
 
 const Category = () => {
   const { slug = "" } = useParams();
   const cat = findCategory(slug);
+
+  usePageSeo(
+    cat
+      ? {
+          title: `${cat.name} in Islamabad | Pelle Aesthetic & Cosmetic`,
+          description: `Expert ${cat.name.toLowerCase()} in Islamabad at Pelle Aesthetic & Cosmetic. Led by Dr. Tasneem Elahi (Cosmetologist, 30+ years experience). ${cat.short} Book your private consultation today.`,
+          canonicalPath: `/category/${cat.slug}`,
+          keywords: `${cat.name.toLowerCase()} islamabad, best ${cat.name.toLowerCase()} clinic islamabad, dr tasneem elahi islamabad, pelle aesthetic islamabad`,
+        }
+      : {
+          title: "Treatment Category | Pelle Aesthetic & Cosmetic Islamabad",
+          description: "Explore our comprehensive range of aesthetic and cosmetic treatments in Islamabad.",
+        }
+  );
+
+  // BreadcrumbList + ItemList schema
+  useEffect(() => {
+    if (!cat) return;
+    const breadcrumb = {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://pelleaesthetic.pk/" },
+        { "@type": "ListItem", "position": 2, "name": cat.name, "item": `https://pelleaesthetic.pk/category/${cat.slug}` },
+      ],
+    };
+    const itemList = {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": `${cat.name} Treatments — Pelle Aesthetic & Cosmetic Islamabad`,
+      "description": cat.description,
+      "url": `https://pelleaesthetic.pk/category/${cat.slug}`,
+      "numberOfItems": cat.treatments.length,
+      "itemListElement": cat.treatments.map((t, i) => ({
+        "@type": "ListItem",
+        "position": i + 1,
+        "name": t.name,
+        "url": `https://pelleaesthetic.pk/category/${cat.slug}/${t.slug}`,
+        "description": t.tagline,
+      })),
+    };
+    const s1 = document.createElement("script");
+    s1.type = "application/ld+json";
+    s1.id = "breadcrumb-ld";
+    s1.text = JSON.stringify(breadcrumb);
+    document.head.appendChild(s1);
+    const s2 = document.createElement("script");
+    s2.type = "application/ld+json";
+    s2.id = "itemlist-ld";
+    s2.text = JSON.stringify(itemList);
+    document.head.appendChild(s2);
+    return () => {
+      document.getElementById("breadcrumb-ld")?.remove();
+      document.getElementById("itemlist-ld")?.remove();
+    };
+  }, [cat]);
 
   if (!cat) {
     return (
@@ -38,7 +100,10 @@ const Category = () => {
           </div>
           <div className="md:col-span-5">
             <div className="aspect-[4/5] w-full overflow-hidden bg-secondary shadow-elegant">
-              <img src={cat.image} alt={cat.name} loading="lazy" className="h-full w-full object-cover" />
+              <CategoryImage
+                image={cat.image}
+                alt={`${cat.name} treatment in Islamabad at Pelle Aesthetic & Cosmetic`}
+              />
             </div>
           </div>
         </div>
@@ -77,7 +142,10 @@ const Category = () => {
         </div>
       </section>
 
+      <GeoDataLayer />
       <Footer />
+      <WhatsAppFAB />
+      <BackToTopFAB />
     </div>
   );
 };

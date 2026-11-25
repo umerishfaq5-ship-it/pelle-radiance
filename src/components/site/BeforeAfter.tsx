@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import beforeAfter from "@/assets/before-after.jpg";
+import beforeAfter from "@/assets/before-after.webp";
 
 export const BeforeAfter = () => {
   const [pos, setPos] = useState(50);
@@ -50,9 +50,9 @@ export const BeforeAfter = () => {
 
       <div className="container-luxe mt-24 grid gap-px bg-border md:grid-cols-3">
         {[
-          { q: "Dr. Tasneem doesn’t just treat skin — she listens. The result feels like a quieter, better version of me.", a: "— A.K., Islamabad" },
-          { q: "From the consultation to the aftercare, Pelle felt more like a private atelier than a clinic. Truly world-class.", a: "— S.M., Lahore" },
-          { q: "I came in for one treatment and stayed for the experience. Considered, calm, and beautifully done.", a: "— H.R., Dubai" },
+          { q: "Dr. Tasneem doesn't just treat skin — he truly listens. The result feels like the best version of me. Highly recommend!", a: "— Ayesha K., Islamabad" },
+          { q: "From my first WhatsApp message to the final follow-up, Pelle felt more like a private sanctuary than a clinic. Exceptional service.", a: "— Sana M., Rawalpindi" },
+          { q: "I was nervous about my procedure but Dr. Tasneem put me completely at ease. The results are natural and I feel so much more confident.", a: "— Fatima R., Lahore" },
         ].map((t, i) => (
           <figure key={i} className="bg-background p-10">
             <div className="font-display text-3xl leading-none text-accent">“</div>

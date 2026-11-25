@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Navy background -->
+  <rect width="64" height="64" fill="#2B2D8E" rx="10"/>
+  <!-- Gold script P -->
+  <text
+    x="10"
+    y="52"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="50"
+    font-weight="700"
+    font-style="italic"
+    fill="#F5C518"
+  >P</text>
+</svg>

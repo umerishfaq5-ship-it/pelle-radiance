@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+          http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://pelleaesthetic.pk/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://pelleaesthetic.pk/og-image.webp</image:loc>
+      <image:title>Pelle Aesthetic &amp; Cosmetic — Best Cosmetic Clinic Islamabad</image:title>
+      <image:caption>Dr. Tasneem Elahi, Cosmetologist, 30+ years experience. Islamabad's premier cosmetic clinic.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://pelleaesthetic.pk/logo.webp</image:loc>
+      <image:title>Pelle Aesthetic &amp; Cosmetic Logo</image:title>
+    </image:image>
+  </url>
+
+  <!-- Category Pages -->
+  <url>
+    <loc>https://pelleaesthetic.pk/category/cosmetic-surgery</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://pelleaesthetic.pk/treatment-images/rhinoplasty-after.webp</image:loc>
+      <image:title>Cosmetic Surgery Islamabad — Pelle Aesthetic &amp; Cosmetic</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://pelleaesthetic.pk/category/cosmetic-injectables</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://pelleaesthetic.pk/treatment-images/btx-a-after.webp</image:loc>
+      <image:title>Botox &amp; Dermal Fillers Islamabad — Pelle Aesthetic &amp; Cosmetic</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://pelleaesthetic.pk/category/breast-surgery</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://pelleaesthetic.pk/treatment-images/bra-a-after.webp</image:loc>
+      <image:title>Breast Surgery Islamabad — Pelle Aesthetic &amp; Cosmetic</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://pelleaesthetic.pk/category/dermatology</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://pelleaesthetic.pk/treatment-images/acne-after.webp</image:loc>
+      <image:title>Dermatology Islamabad — Acne, Melasma, Vitiligo Treatment</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://pelleaesthetic.pk/category/hair-transplant</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://pelleaesthetic.pk/treatment-images/hair-after.webp</image:loc>
+      <image:title>FUE &amp; DHI Hair Transplant Islamabad — Pelle Aesthetic</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://pelleaesthetic.pk/category/intimate-wellness</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://pelleaesthetic.pk/category/laser-skincare</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://pelleaesthetic.pk/treatment-images/pico-a-after.webp</image:loc>
+      <image:title>PICO Laser &amp; Skincare Islamabad — Pelle Aesthetic</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://pelleaesthetic.pk/welfare</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+
+  <!-- Cosmetic Surgery Treatments -->
+  <url><loc>https://pelleaesthetic.pk/category/cosmetic-surgery/rhinoplasty</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pelleaesthetic.pk/category/cosmetic-surgery/facelift</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pelleaesthetic.pk/category/cosmetic-surgery/blepharoplasty</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pelleaesthetic.pk/category/cosmetic-surgery/liposuction</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pelleaesthetic.pk/category/cosmetic-surgery/tummy-tuck</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pelleaesthetic.pk/category/cosmetic-surgery/bbl</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pelleaesthetic.pk/category/cosmetic-surgery/ear-reshaping</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pelleaesthetic.pk/category/cosmetic-surgery/brow-lift</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <!-- Cosmetic Injectables -->
+  <url><loc>https://pelleaesthetic.pk/category/cosmetic-injectables/botox</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pelleaesthetic.pk/category/cosmetic-injectables/dermal-fillers</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pelleaesthetic.pk/category/cosmetic-injectables/lip-fillers</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pelleaesthetic.pk/category/cosmetic-injectables/profhilo</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pelleaesthetic.pk/category/cosmetic-injectables/prp-therapy</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pelleaesthetic.pk/category/cosmetic-injectables/glutathione-injections</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <!-- Breast Surgery -->
+  <url><loc>https://pelleaesthetic.pk/category/breast-surgery/breast-augmentation</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pelleaesthetic.pk/category/breast-surgery/breast-reduction</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pelleaesthetic.pk/category/breast-surgery/breast-lift</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pelleaesthetic.pk/category/breast-surgery/gynecomastia</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pelleaesthetic.pk/category/breast-surgery/nipple-surgery</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <!-- (Aesthetic Dentistry removed — no longer offered) -->
+
+  <!-- Dermatology -->
+  <url><loc>https://pelleaesthetic.pk/category/dermatology/acne-treatment</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pelleaesthetic.pk/category/dermatology/melasma-treatment</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pelleaesthetic.pk/category/dermatology/vitiligo-treatment</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pelleaesthetic.pk/category/dermatology/psoriasis-treatment</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pelleaesthetic.pk/category/dermatology/keloid-treatment</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <!-- Hair Transplant -->
+  <url><loc>https://pelleaesthetic.pk/category/hair-transplant/fue-hair-transplant</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pelleaesthetic.pk/category/hair-transplant/dhi-hair-transplant</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pelleaesthetic.pk/category/hair-transplant/beard-hair-transplant</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pelleaesthetic.pk/category/hair-transplant/prp-hair-treatment</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pelleaesthetic.pk/category/hair-transplant/female-hair-transplant</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <!-- Intimate Wellness -->
+  <url><loc>https://pelleaesthetic.pk/category/intimate-wellness/labiaplasty</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pelleaesthetic.pk/category/intimate-wellness/vaginal-tightening</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pelleaesthetic.pk/category/intimate-wellness/hymenoplasty</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pelleaesthetic.pk/category/intimate-wellness/p-shot</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pelleaesthetic.pk/category/intimate-wellness/penile-fillers</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <!-- Laser & Skincare -->
+  <url><loc>https://pelleaesthetic.pk/category/laser-skincare/pico-laser</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pelleaesthetic.pk/category/laser-skincare/fractional-co2</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pelleaesthetic.pk/category/laser-skincare/hydrafacial</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pelleaesthetic.pk/category/laser-skincare/laser-hair-removal</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pelleaesthetic.pk/category/laser-skincare/hifu</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pelleaesthetic.pk/category/laser-skincare/chemical-peels</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pelleaesthetic.pk/category/laser-skincare/microneedling</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <!-- HNW Location Landing Pages — Islamabad Elite Hubs -->
+  <url><loc>https://pelleaesthetic.pk/location/dha-islamabad</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://pelleaesthetic.pk/location/bahria-town-islamabad</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://pelleaesthetic.pk/location/f6-f7-islamabad</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://pelleaesthetic.pk/location/e11-f10-islamabad</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://pelleaesthetic.pk/location/gulberg-greens-islamabad</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+
+  <!-- Aesthetic Insights Blog -->
+  <url><loc>https://pelleaesthetic.pk/insights</loc><lastmod>2026-05-14</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://pelleaesthetic.pk/insights/islamabad-air-pollution-skin-aging-melasma-laser</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pelleaesthetic.pk/insights/2026-cosmetic-surgery-prices-pakistan-vs-global</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://pelleaesthetic.pk/insights/natural-botox-replacing-heavy-fillers-islamabad</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+</urlset>

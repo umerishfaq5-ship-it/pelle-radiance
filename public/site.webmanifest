@@ -1,0 +1,41 @@
+{
+  "name": "Pelle Aesthetic & Cosmetic",
+  "short_name": "Pelle Aesthetic",
+  "description": "Islamabad's premier cosmetic clinic led by Dr. Tasneem Elahi. Cosmetic surgery, laser, hair transplant, dermatology and more.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0e0b07",
+  "theme_color": "#c9a96e",
+  "lang": "en-PK",
+  "orientation": "portrait-primary",
+  "categories": ["health", "medical"],
+  "icons": [
+    {
+      "src": "/favicon-32.webp",
+      "sizes": "32x32",
+      "type": "image/webp"
+    },
+    {
+      "src": "/apple-touch-icon.webp",
+      "sizes": "180x180",
+      "type": "image/webp",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Book Consultation",
+      "short_name": "Book Now",
+      "description": "Book a private consultation with Dr. Tasneem Elahi",
+      "url": "/?action=book",
+      "icons": [{ "src": "/favicon-32.webp", "sizes": "32x32" }]
+    },
+    {
+      "name": "Our Treatments",
+      "short_name": "Treatments",
+      "description": "Browse all cosmetic treatments",
+      "url": "/sitemap",
+      "icons": [{ "src": "/favicon-32.webp", "sizes": "32x32" }]
+    }
+  ]
+}
