@@ -13,19 +13,24 @@ interface PageSeoOptions {
   noIndex?: boolean;
 }
 
-const BASE_DOMAIN = "https://pelleaesthetic.pk";
-const DEFAULT_OG_IMAGE = "https://pelleaesthetic.pk/og-image.webp";
+const BASE_DOMAIN = "https://drtasneemshakir.com";
+const DEFAULT_OG_IMAGE = "https://drtasneemshakir.com/og-image.webp";
 const DEFAULT_OG_IMAGE_ALT = "Pelle Aesthetic & Cosmetic — Dr. Tasneem Elahi, Islamabad";
+
+// The host serves every prerendered page as a folder and 301-redirects
+// "/path" to "/path/", so canonicals must use the trailing-slash form.
+const withSlash = (p: string) => (p.endsWith("/") ? p : `${p}/`);
 
 export function usePageSeo({
   title,
   description,
-  canonicalPath,
+  canonicalPath: rawCanonicalPath,
   keywords,
   ogImage,
   ogImageAlt,
   noIndex = false,
 }: PageSeoOptions) {
+  const canonicalPath = rawCanonicalPath ? withSlash(rawCanonicalPath) : undefined;
   useEffect(() => {
     // --- Title ---
     const prevTitle = document.title;

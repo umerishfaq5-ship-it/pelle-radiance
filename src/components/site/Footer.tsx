@@ -135,6 +135,9 @@ export const Footer = () => (
             <Link to="/location/bahria-town-islamabad" className="block font-body text-sm text-background/70 hover:text-accent transition-colors py-1">→ Bahria Town</Link>
             <Link to="/location/e11-f10-islamabad" className="block font-body text-sm text-background/70 hover:text-accent transition-colors py-1">→ E-11 & F-10</Link>
             <Link to="/location/gulberg-greens-islamabad" className="block font-body text-sm text-background/70 hover:text-accent transition-colors py-1">→ Gulberg Greens</Link>
+            <Link to="/location/i8-islamabad" className="block font-body text-sm text-background/70 hover:text-accent transition-colors py-1">→ I-8 Islamabad</Link>
+            <Link to="/location/g9-islamabad" className="block font-body text-sm text-background/70 hover:text-accent transition-colors py-1">→ G-9 Islamabad</Link>
+            <Link to="/sitemap" className="block font-body text-sm text-background/70 hover:text-accent transition-colors py-1">→ All Islamabad sectors</Link>
           </div>
         </div>
       </div>

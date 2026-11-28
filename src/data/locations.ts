@@ -1,3 +1,5 @@
+import { sectorLocations } from "./sectors";
+
 export interface LocationData {
   slug: string;
   name: string; // e.g. "DHA Islamabad"
@@ -16,9 +18,13 @@ export interface LocationData {
     serviceArea: string;
     addressLocality: string;
   };
+  /** Slugs of neighbouring areas, linked from the page */
+  nearby?: string[];
+  /** Area-specific questions, rendered and emitted as FAQPage schema */
+  faqs?: { q: string; a: string }[];
 }
 
-export const locations: LocationData[] = [
+const featuredLocations: LocationData[] = [
   {
     slug: "dha-islamabad",
     name: "DHA Islamabad",
@@ -140,6 +146,8 @@ export const locations: LocationData[] = [
     },
   },
 ];
+
+export const locations: LocationData[] = [...featuredLocations, ...sectorLocations];
 
 export const getLocationBySlug = (slug: string): LocationData | undefined =>
   locations.find((l) => l.slug === slug);

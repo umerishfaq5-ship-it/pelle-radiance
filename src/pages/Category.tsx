@@ -35,8 +35,8 @@ const Category = () => {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://pelleaesthetic.pk/" },
-        { "@type": "ListItem", "position": 2, "name": cat.name, "item": `https://pelleaesthetic.pk/category/${cat.slug}` },
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://drtasneemshakir.com/" },
+        { "@type": "ListItem", "position": 2, "name": cat.name, "item": `https://drtasneemshakir.com/category/${cat.slug}` },
       ],
     };
     const itemList = {
@@ -44,13 +44,13 @@ const Category = () => {
       "@type": "ItemList",
       "name": `${cat.name} Treatments — Pelle Aesthetic & Cosmetic Islamabad`,
       "description": cat.description,
-      "url": `https://pelleaesthetic.pk/category/${cat.slug}`,
+      "url": `https://drtasneemshakir.com/category/${cat.slug}`,
       "numberOfItems": cat.treatments.length,
       "itemListElement": cat.treatments.map((t, i) => ({
         "@type": "ListItem",
         "position": i + 1,
         "name": t.name,
-        "url": `https://pelleaesthetic.pk/category/${cat.slug}/${t.slug}`,
+        "url": `https://drtasneemshakir.com/category/${cat.slug}/${t.slug}`,
         "description": t.tagline,
       })),
     };

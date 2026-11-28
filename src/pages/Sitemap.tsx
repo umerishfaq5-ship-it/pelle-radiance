@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { locations } from "@/data/locations";
 import { NavLight } from "@/components/site/Nav";
 import { Footer } from "@/components/site/Footer";
 import { WhatsAppFAB } from "@/components/site/WhatsAppFAB";
@@ -108,6 +109,24 @@ const Sitemap = () => {
                   ))}
                 </div>
               </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Areas we serve — every Islamabad sector page */}
+        <section className="mt-20">
+          <h2 className="font-body text-[10px] uppercase tracking-[0.28em] text-accent mb-6">
+            Areas We Serve in Islamabad
+          </h2>
+          <div className="grid gap-x-6 gap-y-2 sm:grid-cols-2 md:grid-cols-4">
+            {locations.map((l) => (
+              <Link
+                key={l.slug}
+                to={`/location/${l.slug}`}
+                className="font-body text-sm text-foreground/75 hover:text-primary transition-colors py-1"
+              >
+                → Clinic near {l.name}
+              </Link>
             ))}
           </div>
         </section>

@@ -46,7 +46,7 @@ Allow: /
 Crawl-delay: 10
 
 # Sitemap reference
-Sitemap: https://pelleaesthetic.pk/sitemap.xml
+Sitemap: https://drtasneemshakir.com/sitemap.xml
 
 # OpenAI Search
 User-agent: OAI-SearchBot

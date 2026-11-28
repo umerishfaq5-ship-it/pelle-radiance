@@ -29,7 +29,7 @@ const BlogPost = () => {
       description: post.metaDescription,
       image: {
         "@type": "ImageObject",
-        url: `https://pelleaesthetic.pk${post.featuredImage}`,
+        url: `https://drtasneemshakir.com${post.featuredImage}`,
         width: 1200,
         height: 630,
       },
@@ -45,21 +45,21 @@ const BlogPost = () => {
         "@type": "Person",
         name: "Dr. Tasneem Elahi",
         jobTitle: "Cosmetologist & Aesthetic Physician",
-        url: "https://pelleaesthetic.pk",
-        worksFor: { "@type": "MedicalClinic", name: "Pelle Aesthetic & Cosmetic", url: "https://pelleaesthetic.pk" },
+        url: "https://drtasneemshakir.com",
+        worksFor: { "@type": "MedicalClinic", name: "Pelle Aesthetic & Cosmetic", url: "https://drtasneemshakir.com" },
       },
       publisher: {
         "@type": "Organization",
         name: "Pelle Aesthetic & Cosmetic",
-        url: "https://pelleaesthetic.pk",
+        url: "https://drtasneemshakir.com",
         logo: {
           "@type": "ImageObject",
-          url: "https://pelleaesthetic.pk/logo.webp",
+          url: "https://drtasneemshakir.com/logo.webp",
         },
       },
       mainEntityOfPage: {
         "@type": "WebPage",
-        "@id": `https://pelleaesthetic.pk/insights/${slug}`,
+        "@id": `https://drtasneemshakir.com/insights/${slug}`,
       },
     };
     const s = document.createElement("script");

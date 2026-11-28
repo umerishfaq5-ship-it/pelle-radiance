@@ -62,8 +62,8 @@ export const Nav = () => {
               }}
             />
             <div className="hidden px-2">
-              <div className={`font-display text-2xl leading-none transition-colors ${scrolled ? "text-foreground" : "text-primary-foreground"}`}>Pelle</div>
-              <div className={`font-body text-[9px] uppercase tracking-[0.28em] mt-0.5 transition-colors ${scrolled ? "text-muted-foreground" : "text-primary-foreground/75"}`}>Aesthetic &amp; Cosmetic</div>
+              <div className={`font-display text-2xl leading-none transition-colors text-foreground`}>Pelle</div>
+              <div className={`font-body text-[9px] uppercase tracking-[0.28em] mt-0.5 transition-colors text-muted-foreground`}>Aesthetic &amp; Cosmetic</div>
             </div>
           </Link>
 
@@ -75,7 +75,7 @@ export const Nav = () => {
                 onClick={() => setServicesOpen((v) => !v)}
                 onMouseEnter={() => setServicesOpen(true)}
                 className={`inline-flex items-center gap-1.5 font-body text-sm tracking-wide transition-colors ${
-                  scrolled ? "text-foreground/80 hover:text-foreground" : "text-primary-foreground/90 hover:text-primary-foreground"
+                  "text-foreground/80 hover:text-foreground"
                 }`}
               >
                 Treatments
@@ -113,7 +113,7 @@ export const Nav = () => {
                   key={l.to}
                   to={l.to}
                   className={`link-underline font-body text-sm tracking-wide transition-colors ${
-                    scrolled ? "text-foreground/80 hover:text-foreground" : "text-primary-foreground/90 hover:text-primary-foreground"
+                    "text-foreground/80 hover:text-foreground"
                   }`}
                 >
                   {l.label}
@@ -123,7 +123,7 @@ export const Nav = () => {
                   key={l.to}
                   href={l.to}
                   className={`link-underline font-body text-sm tracking-wide transition-colors ${
-                    scrolled ? "text-foreground/80 hover:text-foreground" : "text-primary-foreground/90 hover:text-primary-foreground"
+                    "text-foreground/80 hover:text-foreground"
                   }`}
                 >
                   {l.label}
@@ -137,7 +137,7 @@ export const Nav = () => {
             <a
               href="tel:+923335100650"
               className={`inline-flex items-center gap-2 font-body text-xs tracking-[0.15em] transition-colors ${
-                scrolled ? "text-foreground/70 hover:text-foreground" : "text-primary-foreground/80 hover:text-primary-foreground"
+                "text-foreground/70 hover:text-foreground"
               }`}
             >
               <Phone className="h-3.5 w-3.5" />
@@ -156,7 +156,7 @@ export const Nav = () => {
 
           {/* Mobile Hamburger */}
           <button
-            className={`lg:hidden p-2 transition-colors ${scrolled ? "text-foreground" : "text-primary-foreground"}`}
+            className={`lg:hidden p-2 transition-colors text-foreground`}
             onClick={() => setMobileOpen((v) => !v)}
             aria-label="Toggle menu"
           >

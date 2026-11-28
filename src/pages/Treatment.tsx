@@ -100,7 +100,7 @@ const Treatment = () => {
       "provider": {
         "@type": "MedicalClinic",
         "name": "Pelle Aesthetic & Cosmetic",
-        "url": "https://pelleaesthetic.pk",
+        "url": "https://drtasneemshakir.com",
         "telephone": "+92-333-5100650",
         "address": {
           "@type": "PostalAddress",
@@ -114,9 +114,9 @@ const Treatment = () => {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://pelleaesthetic.pk/" },
-        { "@type": "ListItem", "position": 2, "name": cat.name, "item": `https://pelleaesthetic.pk/category/${cat.slug}` },
-        { "@type": "ListItem", "position": 3, "name": t.name, "item": `https://pelleaesthetic.pk/category/${cat.slug}/${t.slug}` },
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://drtasneemshakir.com/" },
+        { "@type": "ListItem", "position": 2, "name": cat.name, "item": `https://drtasneemshakir.com/category/${cat.slug}` },
+        { "@type": "ListItem", "position": 3, "name": t.name, "item": `https://drtasneemshakir.com/category/${cat.slug}/${t.slug}` },
       ],
     };
     const s1 = document.createElement("script");

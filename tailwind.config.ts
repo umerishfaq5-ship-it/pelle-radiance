@@ -14,7 +14,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        display: ['"Instrument Serif"', "serif"],
+        display: ['"Poppins"', "system-ui", "sans-serif"],
         body: ['"Work Sans"', "system-ui", "sans-serif"],
       },
       colors: {

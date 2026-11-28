@@ -29,7 +29,7 @@ const Welfare = () => {
         "addressLocality": "Islamabad",
         "addressCountry": "PK"
       },
-      "url": "https://pelleaesthetic.pk/welfare",
+      "url": "https://drtasneemshakir.com/welfare",
       "contactPoint": {
         "@type": "ContactPoint",
         "telephone": "+92-333-5100650",

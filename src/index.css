@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 /* Pelle Aesthetic & Cosmetic — Editorial luxury design system.
-   Cream + Rose Gold palette. Instrument Serif headings, Work Sans body. */
+   Warm brown + gold palette. Poppins headings, Work Sans body. */
 
 @layer base {
   :root {
@@ -69,7 +69,11 @@
   }
   h1, h2, h3, h4, h5 {
     @apply font-display tracking-tight;
-    font-weight: 400;
+    font-weight: 500;
+  }
+  h1 em, h2 em, h3 em, h4 em {
+    font-style: normal;
+    font-weight: 600;
   }
 }
 

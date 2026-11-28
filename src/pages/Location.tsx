@@ -80,7 +80,7 @@ const Location = () => {
       "@context": "https://schema.org",
       "@type": ["MedicalClinic", "LocalBusiness"],
       name: "Pelle Aesthetic & Cosmetic",
-      url: `https://pelleaesthetic.pk/location/${slug}`,
+      url: `https://drtasneemshakir.com/location/${slug}/`,
       telephone: "+92-333-5100650",
       address: {
         "@type": "PostalAddress",
@@ -106,8 +106,8 @@ const Location = () => {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Home", item: "https://pelleaesthetic.pk/" },
-        { "@type": "ListItem", position: 2, name: location.name, item: `https://pelleaesthetic.pk/location/${slug}` },
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://drtasneemshakir.com/" },
+        { "@type": "ListItem", position: 2, name: location.name, item: `https://drtasneemshakir.com/location/${slug}/` },
       ],
     };
 
@@ -123,9 +123,26 @@ const Location = () => {
     s2.text = JSON.stringify(breadcrumb);
     document.head.appendChild(s2);
 
+    if (location.faqs?.length) {
+      const s3 = document.createElement("script");
+      s3.type = "application/ld+json";
+      s3.id = "loc-faq-ld";
+      s3.text = JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: location.faqs.map((f) => ({
+          "@type": "Question",
+          name: f.q,
+          acceptedAnswer: { "@type": "Answer", text: f.a },
+        })),
+      });
+      document.head.appendChild(s3);
+    }
+
     return () => {
       document.getElementById("loc-schema-ld")?.remove();
       document.getElementById("loc-breadcrumb-ld")?.remove();
+      document.getElementById("loc-faq-ld")?.remove();
     };
   }, [location, slug]);
 
@@ -499,6 +516,48 @@ const Location = () => {
           </div>
         </div>
       </section>
+
+      {/* ── Area FAQs ─────────────────────────────────────────────────── */}
+      {location.faqs && location.faqs.length > 0 && (
+        <section className="container-luxe pb-24">
+          <h2 className="font-display text-3xl leading-tight md:text-4xl">
+            Questions from {location.shortName} patients
+          </h2>
+          <div className="mt-8 divide-y divide-border border-y border-border">
+            {location.faqs.map((f) => (
+              <details key={f.q} className="group py-5">
+                <summary className="cursor-pointer list-none font-body text-base font-medium text-foreground">
+                  {f.q}
+                </summary>
+                <p className="mt-3 font-body text-sm leading-relaxed text-muted-foreground">{f.a}</p>
+              </details>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {/* ── Nearby areas ──────────────────────────────────────────────── */}
+      {location.nearby && location.nearby.length > 0 && (
+        <section className="container-luxe pb-16">
+          <div className="font-body text-xs uppercase tracking-[0.28em] text-primary mb-5">
+            Nearby areas we serve
+          </div>
+          <div className="flex flex-wrap gap-3">
+            {location.nearby
+              .map((s) => locations.find((l) => l.slug === s))
+              .filter((l): l is NonNullable<typeof l> => Boolean(l))
+              .map((l) => (
+                <Link
+                  key={l.slug}
+                  to={`/location/${l.slug}`}
+                  className="rounded-full bg-secondary px-5 py-2.5 font-body text-sm text-foreground/80 hover:text-primary transition-colors"
+                >
+                  Clinic near {l.shortName}
+                </Link>
+              ))}
+          </div>
+        </section>
+      )}
 
       {/* ── Other Locations ───────────────────────────────────────────── */}
       <section className="bg-secondary/20 py-16">

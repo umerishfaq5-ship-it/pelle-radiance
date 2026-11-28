@@ -61,8 +61,21 @@ const TREATMENT_SLUGS = {
   ],
 };
 
+// Location (sector) and blog slugs are read straight from the data files,
+// so a new entry there is prerendered and added to the sitemap automatically.
+const SITE = "https://drtasneemshakir.com";
+const slugsFrom = (file, pattern) =>
+  [...fs.readFileSync(path.join(ROOT, file), "utf-8").matchAll(pattern)].map((m) => m[1]);
+const LOCATION_SLUGS = [
+  ...slugsFrom("src/data/locations.ts", /^    slug: "([^"]+)"/gm),
+  ...slugsFrom("src/data/sectors.ts", /^    slug: "([^"]+)"/gm),
+];
+const BLOG_SLUGS = slugsFrom("src/data/blog.ts", /^    slug: "([^"]+)"/gm);
+
 function getAllRoutes() {
-  const routes = [...STATIC_ROUTES];
+  const routes = [...STATIC_ROUTES, "/insights"];
+  LOCATION_SLUGS.forEach((s) => routes.push(`/location/${s}`));
+  BLOG_SLUGS.forEach((s) => routes.push(`/insights/${s}`));
   CATEGORY_SLUGS.forEach((cat) => {
     routes.push(`/category/${cat}`);
     (TREATMENT_SLUGS[cat] || []).forEach((t) => {
@@ -190,6 +203,27 @@ async function prerender() {
 
   await browser.close();
   server.close();
+
+  // Sitemap for every prerendered page, using the trailing-slash URLs the host serves.
+  const today = new Date().toISOString().slice(0, 10);
+  const priority = (r) =>
+    r === "/" ? "1.0" : r.startsWith("/category/") && r.split("/").length === 3 ? "0.9"
+      : r.startsWith("/location/") ? "0.8" : "0.7";
+  const urls = routes
+    .map((r) => {
+      const loc = r === "/" ? `${SITE}/` : `${SITE}${r}/`;
+      return `  <url><loc>${loc}</loc><lastmod>${today}</lastmod><priority>${priority(r)}</priority></url>`;
+    })
+    .join("\n");
+  const xml = [
+    '<?xml version="1.0" encoding="UTF-8"?>',
+    '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
+    urls,
+    "</urlset>",
+    "",
+  ].join("\n");
+  fs.writeFileSync(path.join(DIST, "sitemap.xml"), xml, "utf-8");
+  console.log(`  sitemap.xml written with ${routes.length} URLs`);
 
   console.log("\n" + "=".repeat(65));
   console.log(` 🎉 Prerender complete!`);

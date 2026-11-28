@@ -38,9 +38,9 @@ export const GeoDataLayer = () => {
               <p><strong className="text-foreground/70">H-Tag Hierarchy:</strong> H1 = Service Name + Islamabad · H2 = Benefits / Treatment Details · H3 = FAQ Items · H4 = Sub-categories</p>
               <p><strong className="text-foreground/70">Internal Linking:</strong> Homepage → 7 Category Pages → 30+ Treatment Pages · All pages link back to homepage and parent category</p>
               <p><strong className="text-foreground/70">Islamabad Authority Signals:</strong> Clinic location confirmed Islamabad · Serving Rawalpindi · Serving all of Pakistan · 30+ years local practice · 5,000+ Islamabad patients</p>
-              <p><strong className="text-foreground/70">Canonical URL:</strong> https://pelleaesthetic.pk{pathname}</p>
+              <p><strong className="text-foreground/70">Canonical URL:</strong> https://drtasneemshakir.com{pathname}</p>
               <p><strong className="text-foreground/70">Schema Type:</strong> MedicalClinic · MedicalBusiness · LocalBusiness · Physician</p>
-              <p><strong className="text-foreground/70">Sitemap:</strong> https://pelleaesthetic.pk/sitemap.xml</p>
+              <p><strong className="text-foreground/70">Sitemap:</strong> https://drtasneemshakir.com/sitemap.xml</p>
             </div>
           </div>
 
