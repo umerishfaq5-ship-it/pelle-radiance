@@ -203,7 +203,7 @@ const Treatment = () => {
                 </div>
               ) : (
                 <>
-                  <h2 className="mt-4 font-display text-3xl leading-tight">A consultation, on the house.</h2>
+                  <h2 className="mt-4 font-display text-3xl leading-tight">Book your private consultation.</h2>
                   <p className="mt-3 font-body text-sm leading-relaxed text-background/70">
                     Share a few details and Dr. Tasneem's team will schedule your private consultation in Islamabad.
                   </p>

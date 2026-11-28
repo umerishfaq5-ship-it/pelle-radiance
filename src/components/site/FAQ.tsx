@@ -3,44 +3,44 @@ import { ChevronDown } from "lucide-react";
 
 const faqs = [
   {
-    q: "What is the consultation fee at Pelle Aesthetic?",
-    a: "Our consultation fee varies by procedure. Many initial consultations are offered at a nominal fee which is deducted from your treatment cost. Please WhatsApp us for current pricing — we believe in full transparency.",
+    q: "Where is Pelle Aesthetic & Cosmetic in Islamabad?",
+    a: "Our clinic is at Plot 14, Street 32, Sector I-8/3, Islamabad. It is easy to reach from G-8, G-9, H-8, H-9, I-9, I-10 and Rawalpindi via Faizabad. We are open Monday to Saturday, 3:00 PM – 8:00 PM, by appointment.",
   },
   {
-    q: "Is the clinic private and safe for all patients?",
-    a: "Absolutely. Pelle Aesthetic & Cosmetic is led by Dr. Tasneem Elahi (Cosmetologist, 30+ years experience). We maintain strict privacy protocols — separate waiting areas are available and all procedures are performed with complete discretion, dignity, and professionalism for both male and female patients.",
+    q: "What skin problems do you treat?",
+    a: "We treat acne and acne scars, pigmentation, melasma, dark spots, uneven skin tone, open pores, fine lines and wrinkles, as well as conditions such as vitiligo, psoriasis and keloids. Dr. Tasneem Elahi examines your skin first and then recommends a treatment plan suited to your skin type.",
   },
   {
-    q: "How do I book an appointment?",
-    a: "You can book via WhatsApp (the fastest method), fill in our online appointment form, or call the clinic directly. We reply to WhatsApp messages within 2 hours during clinic hours (Mon–Sat, 3–8 PM).",
+    q: "How much does a hair transplant cost in Islamabad?",
+    a: "The cost of a hair transplant depends on the number of grafts you need, the technique (FUE or DHI) and the area being treated. Send clear photos of your hair on WhatsApp (+92 333 5100650) and we will give you an estimate before your visit, with the final quote confirmed at consultation.",
   },
   {
-    q: "Do you offer payment packages or instalment plans?",
-    a: "Yes — for larger procedures we offer flexible payment plans. Please discuss this during your consultation and we will tailor a plan to suit your budget.",
+    q: "Is laser hair removal permanent, and how many sessions are needed?",
+    a: "Laser hair removal gives long-term hair reduction. Most people need around 6–8 sessions spaced a few weeks apart, followed by occasional maintenance. The number of sessions depends on the area, hair colour and hormones; we use settings that are safe for Pakistani skin tones.",
   },
   {
-    q: "Are all procedures safe for Pakistani/South Asian skin tones?",
-    a: "Yes — all our laser and aesthetic treatments are carefully calibrated and protocol-optimised for South Asian skin tones (Fitzpatrick Types IV–VI). Dr. Tasneem has extensive experience treating darker skin safely.",
+    q: "What does a HydraFacial do and how often should I get one?",
+    a: "A HydraFacial deep-cleans, exfoliates and hydrates the skin in one session with no downtime. It helps with dullness, blackheads, open pores and dehydrated skin. Many patients have one every 4 weeks, or before an event such as a wedding.",
   },
   {
-    q: "Is the clinic fully confidential — especially for intimate procedures?",
-    a: "Yes, 100% confidential. We have strict data privacy protocols. Your records, consultation details and procedure information are never shared with any third party. For sensitive procedures, consultations are also done privately by appointment only.",
+    q: "Are skin whitening (glutathione) injections safe?",
+    a: "Glutathione can help brighten skin tone, but results vary and it is not suitable for everyone. It should only be given after a medical assessment, with a genuine product and in a clinic. Dr. Tasneem will tell you honestly whether it is right for you and what results to expect.",
   },
   {
-    q: "How long is recovery after cosmetic surgery?",
-    a: "Recovery varies by procedure. Many non-surgical treatments require zero downtime. Surgical procedures typically range from 1–2 weeks (minor) to 4–6 weeks (major surgery). Dr. Tasneem will give you a detailed recovery plan during consultation.",
+    q: "What are the prices of Botox, fillers and other treatments?",
+    a: "Prices depend on the treatment, the area and the amount of product needed. Message us on WhatsApp with the treatment you are interested in and we will share current pricing. Instalment plans are available for larger procedures.",
   },
   {
-    q: "Do you accept patients from outside Islamabad?",
-    a: "Yes! We welcome patients from Rawalpindi, Lahore, Karachi and all across Pakistan. Many patients also travel from UAE, UK and Saudi Arabia. We can arrange initial consultations online via WhatsApp video for out-of-city patients.",
+    q: "Is the clinic private, including for intimate treatments?",
+    a: "Yes. Every consultation is by appointment and one-to-one with Dr. Tasneem Elahi. Your records and photos are never shared without your permission, and intimate wellness consultations are handled with complete confidentiality for both women and men.",
   },
   {
-    q: "What languages does Dr. Tasneem consult in?",
-    a: "Dr. Tasneem consults in Urdu and English — whichever you prefer. Our WhatsApp support team also responds in both languages.",
+    q: "How long is recovery after rhinoplasty or liposuction?",
+    a: "Most patients return to office work about 1–2 weeks after rhinoplasty and within a week after liposuction, with swelling settling gradually over the following months. Non-surgical treatments such as Botox, fillers and HydraFacial have little or no downtime. You will receive a written aftercare plan.",
   },
   {
-    q: "Is hair transplant results permanent?",
-    a: "Yes — hair transplantation at Pelle uses FUE and DHI techniques which transplant genetically resistant donor follicles. These follicles are permanent and continue growing for life. Results are typically fully visible at 12–15 months.",
+    q: "Do you see patients from outside Islamabad?",
+    a: "Yes. Many patients come from Rawalpindi, and others travel from Lahore, Peshawar, AJK and abroad (UAE, UK, Saudi Arabia). We can start with a WhatsApp video consultation so you only travel once your plan is clear. Consultations are in Urdu or English.",
   },
 ];
 

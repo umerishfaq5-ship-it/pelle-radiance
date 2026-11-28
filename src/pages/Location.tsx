@@ -68,7 +68,7 @@ const Location = () => {
         }
       : {
           title: "Location | Pelle Aesthetic & Cosmetic Islamabad",
-          description: "Premium cosmetic clinic serving Islamabad's elite neighbourhoods. Led by Dr. Tasneem Elahi.",
+          description: "Skin, hair and aesthetic clinic in I-8 Islamabad serving patients from every sector. Led by Dr. Tasneem Elahi.",
         }
   );
 
@@ -159,7 +159,7 @@ const Location = () => {
   }
 
   const waText = encodeURIComponent(
-    `Hi, I'm a resident of ${location.name} and I'd like to book a VIP consultation at Pelle Aesthetic.`
+    `Hi, I'm a resident of ${location.name} and I'd like to book a consultation at Pelle Aesthetic.`
   );
 
   return (
@@ -222,7 +222,7 @@ const Location = () => {
             {/* Booking sidebar */}
             <aside className="md:col-span-5">
               <div className="bg-foreground p-8 text-background shadow-elegant md:p-10">
-                <div className="eyebrow !text-accent">Book a VIP Consultation</div>
+                <div className="eyebrow !text-accent">Book a Consultation</div>
                 {done ? (
                   <div className="mt-6 flex flex-col items-center text-center gap-4 py-4">
                     <div className="h-12 w-12 rounded-full bg-accent/20 flex items-center justify-center">
@@ -242,7 +242,7 @@ const Location = () => {
                   </div>
                 ) : (
                   <>
-                    <h2 className="mt-4 font-display text-3xl leading-tight">Your private consultation, on the house.</h2>
+                    <h2 className="mt-4 font-display text-3xl leading-tight">Book your private consultation.</h2>
                     <p className="mt-3 font-body text-sm leading-relaxed text-background/70">
                       Serving {location.audience}. Leave your details and Dr. Tasneem's team will schedule your confidential visit.
                     </p>
@@ -310,7 +310,7 @@ const Location = () => {
                         className="w-full flex items-center justify-center gap-2 bg-accent py-4 font-body text-xs uppercase tracking-[0.25em] text-accent-foreground transition-opacity hover:opacity-90 disabled:opacity-60"
                       >
                         <Send className="h-4 w-4" />
-                        {sending ? "Sending..." : "Request VIP Consultation"}
+                        {sending ? "Sending..." : "Request a Consultation"}
                       </button>
                       <a
                         href={`${WHATSAPP_HREF}?text=${waText}`}
@@ -377,7 +377,7 @@ const Location = () => {
                   },
                   {
                     title: "Complete Discretion",
-                    body: "Every consultation is appointment-only, one-to-one with Dr. Tasneem. No waiting rooms, no shared spaces, no patient lists visible to others. A standard of privacy befitting the " + location.lifestyle + " community.",
+                    body: "Every consultation is appointment-only, one-to-one with Dr. Tasneem. Your records and photos are never shared without your permission.",
                   },
                 ].map(({ title, body }) => (
                   <div key={title} className="flex gap-5">
@@ -415,7 +415,7 @@ const Location = () => {
         <div className="container-luxe">
           <div className="eyebrow">Our Services in {location.name}</div>
           <h2 className="mt-6 font-display text-4xl leading-tight md:text-6xl max-w-2xl">
-            Three pillars of clinical excellence.
+            Our most requested treatments.
           </h2>
           <p className="mt-6 max-w-2xl font-body text-base leading-relaxed text-muted-foreground md:text-lg">
             Every treatment at Pelle is performed or personally supervised by Dr. Tasneem Elahi, using medical-grade equipment and internationally sourced materials.
@@ -458,7 +458,7 @@ const Location = () => {
               Pelle Aesthetic & Cosmetic — Islamabad
             </h2>
             <p className="mt-6 font-body text-base leading-relaxed text-muted-foreground">
-              Our clinic is located in the heart of Sector I-8/3 — a professional medical hub serving Islamabad's most discerning residents, including those from {location.name}.
+              Our clinic is located in the heart of Sector I-8/3 — easy to reach from Faizabad, Srinagar Highway and IJP Road, including for patients from {location.name}.
             </p>
           </div>
 
@@ -504,7 +504,7 @@ const Location = () => {
                 target="_blank" rel="noreferrer"
                 className="flex-1 flex items-center justify-center gap-2 bg-[#25D366] py-4 font-body text-xs uppercase tracking-[0.25em] text-white hover:opacity-90 transition-opacity"
               >
-                <MessageCircle className="h-4 w-4" /> Book VIP Consultation via WhatsApp
+                <MessageCircle className="h-4 w-4" /> Book on WhatsApp
               </a>
               <a
                 href={`tel:+92${WHATSAPP.slice(2)}`}

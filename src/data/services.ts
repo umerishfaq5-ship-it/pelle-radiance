@@ -41,10 +41,10 @@ export const categories: Category[] = [
     slug: "cosmetic-surgery",
     number: "01",
     name: "Cosmetic Surgery",
-    short: "Refined surgical artistry.",
+    short: "Nose, face and body surgery.",
     icon: "✦",
     description:
-      "World-class cosmetic surgical procedures — from rhinoplasty to facelifts — performed with precision and discretion at our premier I-8 Islamabad clinic. We utilize state-of-the-art facilities and advanced surgical techniques tailored specifically to the anatomical nuances of Pakistani patients, ensuring results that are both transformative and incredibly natural. Your safety, privacy, and aesthetic goals are our absolute highest priority.",
+      "Cosmetic surgery in Islamabad for the nose, face and body — including rhinoplasty (nose job), facelift, eyelid surgery, liposuction, tummy tuck and BBL. Every patient has a detailed consultation with Dr. Tasneem Elahi first, so you understand the procedure, the recovery time and the realistic result before you decide. Procedures are planned for natural-looking results that suit your face and body.",
     image: surgery,
     treatments: [
       {
@@ -177,10 +177,10 @@ export const categories: Category[] = [
     slug: "cosmetic-injectables",
     number: "02",
     name: "Cosmetic Injectables",
-    short: "Refresh. Revive. Reimagine.",
+    short: "Botox, fillers and skin boosters.",
     icon: "◈",
     description:
-      "From Botox to dermal fillers, lip augmentation to advanced skin boosters — we offer a comprehensive suite of non-surgical injectable treatments that deliver remarkable, anti-aging results with zero downtime. Dr. Tasneem employs specialized micro-dosing and precise placement techniques designed to enhance your natural features without ever looking overdone or frozen, catering exactly to the aesthetic desires of our clientele in Pakistan.",
+      "Non-surgical injectable treatments in Islamabad — Botox for forehead lines and crow's feet, dermal and lip fillers, Profhilo skin boosters, PRP and glutathione skin-brightening injections. Most treatments take under an hour with little or no downtime. Dr. Tasneem Elahi uses conservative amounts so that you look fresher, not 'done'.",
     image: injectables,
     treatments: [
       {
@@ -313,10 +313,10 @@ export const categories: Category[] = [
     slug: "breast-surgery",
     number: "03",
     name: "Breast Surgery",
-    short: "Natural results you'll love.",
+    short: "Breast and chest surgery.",
     icon: "✿",
     description:
-      "Comprehensive breast surgery services — including augmentation, reduction, mastopexy (lift), and reconstruction — performed with the highest international standards of surgical safety and aesthetic artistry. We deeply understand the cultural sensitivities and physical goals of our patients, offering completely private consultations and highly customized surgical plans to restore proportion, symmetry, and profound self-confidence.",
+      "Breast surgery in Islamabad including breast augmentation, breast reduction, breast lift and gynecomastia (male chest reduction). Consultations are private and one-to-one, and we explain the options, recovery and expected results clearly so that you can make an informed decision.",
     image: breastImg,
     treatments: [
       {
@@ -420,10 +420,10 @@ export const categories: Category[] = [
     slug: "dermatology",
     number: "04",
     name: "Dermatology",
-    short: "Healthy, radiant skin — medically.",
+    short: "Acne, pigmentation and skin conditions.",
     icon: "⬡",
     description:
-      "Expert medical dermatology addressing the full spectrum of skin conditions — from stubborn adult acne and deep-rooted melasma to psoriasis, vitiligo, and progressive hair loss. Utilizing the latest clinical diagnostics and FDA-approved laser technologies, our clinic provides targeted, science-backed solutions specifically calibrated for the unique pigmentation and healing profiles of South Asian skin types.",
+      "Skin treatment in Islamabad for acne and acne scars, melasma, pigmentation and dark spots, as well as vitiligo, psoriasis and keloids. Dr. Tasneem Elahi examines your skin, explains the cause and builds a treatment plan that can combine medical treatment, peels and laser — suited to Pakistani skin types and Islamabad's climate.",
     image: laser,
     treatments: [
       {
@@ -494,10 +494,10 @@ export const categories: Category[] = [
     slug: "hair-transplant",
     number: "05",
     name: "Hair Transplant",
-    short: "Restore a natural, lasting hairline.",
+    short: "FUE, DHI and hair-loss treatment.",
     icon: "⟡",
     description:
-      "Pioneering FUE, DHI, and advanced hair transplant techniques — in partnership with renowned hair transplant specialist Dr. Mazhar Hussain — delivering undetectable, lifelong hair restoration results. Serving patients from Islamabad and across Pakistan, our clinic specialises in high-density grafting and natural hairline design for both men and women.",
+      "Hair transplant in Islamabad using FUE and DHI techniques, in partnership with hair transplant specialist Dr. Mazhar Hussain. We also offer beard transplant, female hair transplant and PRP hair treatment for thinning hair. Send photos on WhatsApp for an estimate of the grafts you need before your visit.",
     image: hair,
     treatments: [
       {
@@ -578,10 +578,10 @@ export const categories: Category[] = [
     slug: "intimate-wellness",
     number: "06",
     name: "Intimate Wellness",
-    short: "Feminine rejuvenation & intimate care.",
+    short: "Confidential intimate care.",
     icon: "◇",
     description:
-      "Islamabad's most discreet and trusted intimate wellness clinic — led by Dr. Tasneem Elahi (Cosmetologist, 30+ years experience). Highly confidential intimate health treatments encompassing surgical labiaplasty, vaginal tightening, hymenoplasty, and male enhancement procedures. Performed in a completely private, appointment-only clinical environment at our I-8, Islamabad clinic. Dr. Tasneem upholds absolute standards of medical dignity, empathy, and discretion throughout your deeply personal wellness journey.",
+      "Confidential intimate wellness treatments in Islamabad, led by Dr. Tasneem Elahi (Cosmetologist, 30+ years experience) — including labiaplasty, vaginal tightening, hymenoplasty and treatments for men. Every consultation is private and by appointment only, and your details are never shared.",
     image: intimate,
     treatments: [
       {
@@ -710,10 +710,10 @@ export const categories: Category[] = [
     slug: "laser-skincare",
     number: "07",
     name: "Laser & Skincare",
-    short: "Radiance, scientifically refined.",
+    short: "Laser hair removal, HydraFacial and more.",
     icon: "✳",
     description:
-      "Premium medical-grade laser treatments, clinical facials, and advanced skin rejuvenation procedures. Whether you are seeking permanent laser hair removal, intensive acne scar revision, or non-surgical skin tightening, our cutting-edge aesthetic devices are strictly calibrated for maximum efficacy and safety on Pakistani skin tones, delivering a luminous, flawless complexion.",
+      "Laser and skin treatments in Islamabad — laser hair removal, HydraFacial, PICO laser for pigmentation, fractional CO₂ for acne scars, HIFU skin tightening, chemical peels and microneedling. Laser settings are adjusted for Pakistani skin tones, and most treatments need little or no downtime.",
     image: laser,
     treatments: [
       {

@@ -13,13 +13,13 @@ export const Hero = () => (
         </div>
 
         <h1 className="mt-6 text-[clamp(2.25rem,4.6vw,3.9rem)] leading-[1.12] text-foreground text-balance">
-          Cosmetic Surgery &amp; <em className="text-primary">Aesthetic Clinic</em> in Islamabad
+          Skin, Hair &amp; <em className="text-primary">Aesthetic Clinic</em> in Islamabad
         </h1>
 
         <p className="mt-6 max-w-2xl font-body text-base leading-relaxed text-muted-foreground md:text-lg">
-          Pelle Aesthetic &amp; Cosmetic, led by <strong className="font-semibold text-foreground">Dr. Tasneem Elahi</strong> (Cosmetologist),
-          offers cosmetic surgery, laser and skin treatments, hair transplant and intimate wellness — with personalised
-          treatment plans in a completely private clinic.
+          From acne, pigmentation and melasma to laser hair removal, HydraFacial, hair transplant, Botox and
+          rhinoplasty — every treatment at Pelle is planned by <strong className="font-semibold text-foreground">Dr. Tasneem Elahi</strong> (Cosmetologist,
+          30+ years) at our private clinic in I-8/3, Islamabad.
         </p>
 
         <ul className="mt-7 grid max-w-xl grid-cols-1 gap-x-6 gap-y-3 sm:grid-cols-2">

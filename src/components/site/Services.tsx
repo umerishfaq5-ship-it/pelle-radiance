@@ -13,14 +13,14 @@ export const Services = () => {
       <div className="container-luxe">
         {/* Section header */}
         <div className="mx-auto max-w-3xl text-center">
-          <div className="font-body text-xs uppercase tracking-[0.28em] text-primary">The Practice</div>
-          <h2 className="mt-4 font-display text-5xl leading-[1.03] text-foreground md:text-6xl text-balance">
-            7 Specialties, <em className="text-primary">one clinic.</em>
+          <div className="font-body text-xs uppercase tracking-[0.28em] text-primary">Our Treatments</div>
+          <h2 className="mt-4 font-display text-4xl leading-[1.1] text-foreground md:text-5xl text-balance">
+            Skin, hair &amp; <em className="text-primary">body treatments</em> in Islamabad
           </h2>
           <p className="mt-5 font-body text-base leading-relaxed text-muted-foreground">
-            From precision cosmetic surgery to advanced laser skincare, from hair transplant to
-            injectable rejuvenation — every service at Pelle is led by Dr. Tasneem Elahi with
-            medical-grade safety and a refined aesthetic sensibility.
+            Whether you need treatment for acne or pigmentation, want laser hair removal or a HydraFacial,
+            or are considering a hair transplant or rhinoplasty — choose a category below to see the
+            treatments we offer and book a consultation with Dr. Tasneem Elahi.
           </p>
         </div>
 
